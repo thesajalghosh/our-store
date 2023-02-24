@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.heading{
+    font-size: 70px;
+    color: black;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 8px;
+   font-family: 'Shantell Sans', cursive;
+   
+}
+.heading > span{
+    color: rgb(202, 39, 94);
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 20px;
+}
