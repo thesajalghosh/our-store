@@ -1,7 +1,11 @@
 *{
     margin: 0;
     padding: 0;
+    background-color: rgb(194, 186, 186);
 }
+::-webkit-scrollbar{
+    display: none;
+  }
 .heading{
     font-size: 70px;
     color: black;
@@ -21,3 +25,127 @@
     gap: 40px;
     margin: 20px;
 }
+.button{
+    padding: 9px;
+    font-size: 20px;
+    font-family: 'Shantell Sans', cursive;      
+    border: 2px solid black;
+    background-color: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.active{
+    color: pink;
+    background-color: black;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+#search__input{
+    margin: 15px;
+    margin-left: 0;
+    padding: 8px;
+    width: 33%;
+    font-size: 18px;
+    font-family: 'Shantell Sans', cursive;    
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 2px solid black;
+    background-color: #ffffff;
+    
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+.search__btn{
+    border: none;
+    padding: 9px;
+    background-color: pink;
+    cursor: pointer;
+}
+.product__table{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#product{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 15px;
+    /* padding: 2em 0; */
+   
+
+}
+
+.imageContainer{
+    text-align: center;
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+  
+    
+
+}
+img{
+    /* float: left; */
+    width:300px;
+    height:300px;
+    /* object-fit: contain; */
+    background-size: cover;   
+}
+img:hover{
+    transform: scale(1.2);
+}
+.card {
+    height: 350px;
+    width: 300px;
+    margin-top: 1em;
+    /* padding: 1em; */
+    border-radius: 5px;
+    border: 2px solid rgb(7, 6, 6);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+   
+  }
+  .container{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+  }
+
+  .product__name , .product__price{
+      margin: 9px;
+      font-size: medium;
+      font-family: 'Shantell Sans', cursive;    
+
+  }
+  .hide {
+    display: none;
+  }
+
+  .footer{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px;
+      margin: 15px;
+      font-size: xx-large;
+      font-family: 'Shantell Sans', cursive;    
+
+  }
+ 
+

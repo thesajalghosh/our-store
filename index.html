@@ -8,8 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script.js"></script>
+    
 </head>
 <body>
     <!--  This section about Title of page -->
@@ -17,12 +18,25 @@
 
     <!--  This section about button -->
     <div class="buttons">
-        <button class="button">ALL</button>
-        <button class="button">CAKES</button>
-        <button class="button">CUPCAKES</button>
-        <button class="button">SWEETS</button>
-        <button class="button">DOUGHNUTS</button>
+        <button class="button" onclick="filterProduct('all')">ALL</button>
+        <button class="button" onclick="filterProduct('cake')">CAKE</button>
+        <button class="button" onclick="filterProduct('cupcake')">CUPCAKE</button>
+        <button class="button" onclick="filterProduct('sweet')">SWEET</button>
+        <button class="button" onclick="filterProduct('doughnut')">DOUGHNUT</button>
 
     </div>
+    <!-- THis section about search bar -->
+    <div class="search">
+        <button class="material-symbols-outlined search__btn">
+            search
+            </button>
+    <input placeholder="items...." type="search" id="search__input" />
+</div>
+<div class="product__table">
+<div id="product"></div>
+</div>
+<footer class="footer">This is Our Store</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
